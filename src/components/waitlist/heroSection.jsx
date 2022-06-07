@@ -4,7 +4,7 @@ import herobg from "../../assets/herobg.png";
 function HeroSection() {
   return (
     <section
-      className="h-screen w-full"
+      className="h-fit md:h-screen w-full"
       style={{ backgroundImage: `url(${herobg})`, backgroundSize: "cover" }}
     >
       <div className=" h-full w-full">

@@ -3,7 +3,7 @@ import React from "react";
 function Navbar() {
   return (
     <section className="h-[5rem] bg-white items-center">
-      <nav className="flex items-center h-full w-full  md:w-10/12 mx-3 md:mx-auto flex justify-between items-center">
+      <nav className="flex items-center h-full w-11/12  md:w-10/12 mx-auto flex justify-between items-center">
         <h1 className="font-extrabold text-3xl text-slate-900">Gofitish</h1>
         <ul className="hidden md:flex justify-between items-center text-slate-900">
           <li className="mr-4">

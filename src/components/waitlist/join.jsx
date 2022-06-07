@@ -13,7 +13,9 @@ function Join() {
       }}
     >
       <div className="w-11/12 md:w-6/12 text-center mx-auto mb-8">
-        <h1 className="text-4xl font-bold text-white">Join Our Waitlist</h1>
+        <h1 className="text-4xl font-bold text-white mb-3">
+          Join Our Waitlist
+        </h1>
         <p className="text-gray-100 text-base">
           Be the first to know once we're live 😊{" "}
         </p>
@@ -22,7 +24,7 @@ function Join() {
         <select
           name=""
           id=""
-          className="bg-gray-200 w-full py-3 px-1 border border-gray-400 mb-3"
+          className="bg-gray-200 w-full py-3 px-1 border border-gray-400 mb-3 rounded"
         >
           <option value="">Select Category</option>
           <option value="">Gym instructor/nutritionist</option>
@@ -32,7 +34,7 @@ function Join() {
           <input
             type="text"
             placeholder="Email"
-            className="bg-gray-200 w-full md:w-[80%]  py-2 px-1 border border-gray-400 mb-4"
+            className="bg-gray-200 w-full md:w-[80%]  py-2 px-1 border border-gray-400 mb-4 md:mb-0 rounded"
           />
           <button className="w-fit bg-amber-500 text-slate-900 text-normal font-bold py-2 px-4 rounded flex">
             Join Waitlist
