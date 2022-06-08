@@ -1,7 +1,7 @@
 import React from "react";
 
 function GotEveryOne() {
-  return <section>gotEveryOne</section>;
+  return <section></section>;
 }
 
 export default GotEveryOne;
