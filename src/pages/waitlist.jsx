@@ -4,6 +4,7 @@ import HeroSection from "../components/waitlist/heroSection";
 import Join from "../components/waitlist/join";
 import Navbar from "../components/waitlist/navbar";
 import Podcast from "../components/waitlist/podcast";
+import Stream from "../components/waitlist/Stream";
 
 function Waitlist() {
   return (
@@ -13,6 +14,7 @@ function Waitlist() {
       <About />
       <Join />
       <Podcast />
+      <Stream />
     </div>
   );
 }
