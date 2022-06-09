@@ -2,7 +2,7 @@ import React from "react";
 
 function Podcast() {
   return (
-    <section className="h-fit md:h-screen w-full">
+    <section className="h-fit md:h-screen w-full mb-16 md:mb-0">
       <div className=" h-full w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 h-full  w-11/12 md:w-10/12 mx-auto gap-6">
           <div className="h-full flex justify-end items-center">
@@ -12,7 +12,7 @@ function Podcast() {
               <img
                 src="https://i.pinimg.com/564x/3c/b0/bb/3cb0bb2bfb05217261348af09effb875.jpg"
                 alt="coaches"
-                className="h-full w-full"
+                className="h-full w-full order-last md:order-first"
               />
             </div>
           </div>

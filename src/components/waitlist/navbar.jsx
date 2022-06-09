@@ -7,22 +7,38 @@ function Navbar() {
         <h1 className="font-extrabold text-3xl text-slate-900">Gofitish</h1>
         <ul className="hidden md:flex justify-between items-center text-slate-900">
           <li className="mr-4">
-            <a href="#" className="text-white text-slate-900">
+            <a
+              href="#"
+              className="text-white text-slate-900"
+              style={{ color: "black" }}
+            >
               Home
             </a>
           </li>
-          <li className="mr-4">
-            <a href="#" className="text-white text-slate-900">
+          <li className="mr-4 text-slate-900">
+            <a
+              href="#"
+              className="text-white text-slate-900"
+              style={{ color: "black" }}
+            >
               About
             </a>
           </li>
           <li className="mr-4">
-            <a href="#" className="text-white text-slate-900">
+            <a
+              href="#"
+              className="text-white text-slate-900"
+              style={{ color: "black" }}
+            >
               Services
             </a>
           </li>
           <li className="mr-4">
-            <a href="#" className="text-white text-slate-900">
+            <a
+              href="#"
+              className="text-white text-slate-900"
+              style={{ color: "black" }}
+            >
               FAQ
             </a>
           </li>

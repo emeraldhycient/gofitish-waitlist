@@ -3,7 +3,7 @@ import studio from "../../assets/studio.png";
 function Join() {
   return (
     <section
-      className="flex flex-col justify-center items-center h-[60vh] md:py-1  md:h-screen w-full"
+      className="flex flex-col justify-center items-center h-[60vh] md:py-1  md:h-screen w-full mb-16 md:mb-0"
       style={{
         background: `url(${studio})`,
         backgroundSize: "cover",
@@ -17,7 +17,7 @@ function Join() {
           Join Our Waitlist
         </h1>
         <p className="text-gray-100 text-base">
-          Be the first to know once we're live 😊{" "}
+          Be the first to know once we're live 🚀 😊
         </p>
       </div>
       <form action="" className="w-11/12 md:w-7/12 mx-auto">
@@ -29,6 +29,7 @@ function Join() {
           <option value="">Select Category</option>
           <option value="">Gym instructor/nutritionist</option>
           <option value="">Gym student/nutritionist</option>
+          <option value="">Vc firm / angel investor</option>
         </select>
         <div className="w-full block  md:flex justify-between items-center">
           <input

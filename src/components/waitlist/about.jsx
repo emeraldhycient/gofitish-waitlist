@@ -8,7 +8,7 @@ import note from "../../assets/note.png";
 
 function About() {
   return (
-    <section className="h-fit w-full bg-[#FFFCF6]">
+    <section className="h-fit w-full bg-[#FFFCF6] pb-3">
       <div
         className=" h-full w-full py-20 "
         style={{ backgroundImage: `url(${back})`, backgroundSize: "contain" }}
@@ -21,7 +21,7 @@ function About() {
         </div>
 
         <div className="w-11/12 md:w-10/12 mx-auto mt-12 grid grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="hover:bg-white hover:rounded-2xl hover:shadow hover:pb-4">
+          <div className=" hover:rounded-2xl hover:shadow hover:pb-4">
             <div className="flex flex-col justify-center items-center text-center">
               <div className="bg-slate-900 icon-holder  h-16 w-16 rounded-full my-3 p-2">
                 <img src={location} alt="" />
@@ -35,7 +35,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="hover:bg-white hover:rounded-2xl hover:shadow hover:pb-4">
+          <div className=" hover:rounded-2xl hover:shadow hover:pb-4">
             <div className="flex flex-col justify-center items-center text-center">
               <div className="bg-slate-900 icon-holder  h-16 w-16 rounded-full my-3 p-2">
                 <img src={video} alt="" />
@@ -49,7 +49,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="hover:bg-white hover:rounded-2xl hover:shadow hover:pb-4">
+          <div className=" hover:rounded-2xl hover:shadow hover:pb-4">
             <div className="flex flex-col justify-center items-center text-center">
               <div className="bg-slate-900 icon-holder  h-16 w-16 rounded-full my-3 p-2">
                 <img src={podcast} alt="" />
@@ -63,7 +63,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="hover:bg-white hover:rounded-2xl hover:shadow hover:pb-4">
+          <div className=" hover:rounded-2xl hover:shadow hover:pb-4">
             <div className="flex flex-col justify-center items-center text-center">
               <div className="bg-slate-900 icon-holder  h-16 w-16 rounded-full my-3 p-2">
                 <img src={Gym} alt="" />
@@ -77,7 +77,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="hover:bg-white hover:rounded-2xl hover:shadow hover:pb-4">
+          <div className=" hover:rounded-2xl hover:shadow hover:pb-4">
             <div className="flex flex-col justify-center items-center text-center">
               <div className="bg-slate-900 icon-holder  h-16 w-16 rounded-full my-3 p-2">
                 <img src={guarantee} alt="" />
@@ -91,7 +91,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="hover:bg-white hover:rounded-2xl hover:shadow hover:pb-4">
+          <div className=" hover:rounded-2xl hover:shadow hover:pb-4">
             <div className="flex flex-col justify-center items-center text-center">
               <div className="bg-slate-900 icon-holder  h-16 w-16 rounded-full my-3 p-2">
                 <img src={note} alt="" />
