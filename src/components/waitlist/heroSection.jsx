@@ -1,3 +1,4 @@
+import ScrollIntoView from "react-scroll-into-view";
 import coaches from "../../assets/coaches.png";
 import herobg from "../../assets/herobg.png";
 
@@ -19,9 +20,11 @@ function HeroSection() {
               From the small stuff to the big picture, organizes the work so
               teams know what to do, why it matters, and how to get it done.
             </p>
-            <button className="w-fit bg-amber-500 text-white text-normal font-bold py-2 px-4 rounded uppercase">
-              Join Waitlist
-            </button>
+            <ScrollIntoView selector="#joinwaitlist">
+              <button className="w-fit bg-amber-500 text-white text-normal font-bold py-2 px-4 rounded uppercase">
+                Join Waitlist
+              </button>
+            </ScrollIntoView>
           </div>
           <div className="h-full flex justify-end items-center">
             {/*<img src={coaches} alt="coaches" className="h-[400px]" />*/}

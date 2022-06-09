@@ -15,12 +15,16 @@ function Waitlist() {
       <Navbar />
       <HeroSection />
       <About />
-      <Join />
+      <div id="joinwaitlist">
+        <Join />
+      </div>
       <Podcast />
       <Vetted />
       <Stream />
       <Blog />
-      <Join />
+      <div id="joinwaitlist2">
+        <Join />
+      </div>
       <Footer />
     </div>
   );

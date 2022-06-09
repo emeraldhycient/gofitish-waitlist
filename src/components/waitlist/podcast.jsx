@@ -1,4 +1,4 @@
-import React from "react";
+import ScrollIntoView from "react-scroll-into-view";
 
 function Podcast() {
   return (
@@ -27,9 +27,11 @@ function Podcast() {
               From the small stuff to the big picture, organizes the work so
               teams know what to do, why it matters, and how to get it done.
             </p>
-            <button className="w-fit bg-amber-500 text-white text-normal font-bold py-2 px-4 rounded uppercase">
-              Join Waitlist
-            </button>
+            <ScrollIntoView selector="#joinwaitlist2">
+              <button className="w-fit bg-amber-500 text-white text-normal font-bold py-2 px-4 rounded uppercase">
+                Join Waitlist
+              </button>
+            </ScrollIntoView>
           </div>
         </div>
       </div>

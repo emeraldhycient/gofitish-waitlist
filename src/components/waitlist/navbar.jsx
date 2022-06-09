@@ -1,4 +1,4 @@
-import React from "react";
+import ScrollIntoView from "react-scroll-into-view";
 
 function Navbar() {
   return (
@@ -45,9 +45,11 @@ function Navbar() {
             </a>
           </li>
         </ul>
-        <button className="bg-slate-900 text-amber-500 text-normal font-bold py-2 px-4 rounded uppercase">
-          Join Waitlist
-        </button>
+        <ScrollIntoView selector="#joinwaitlist">
+          <button className="bg-slate-900 text-amber-500 text-normal font-bold py-2 px-4 rounded uppercase">
+            Join Waitlist
+          </button>
+        </ScrollIntoView>
       </nav>
     </section>
   );

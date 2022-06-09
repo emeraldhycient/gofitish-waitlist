@@ -1,6 +1,57 @@
+import { useState } from "react";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 import studio from "../../assets/studio.png";
 
 function Join() {
+  const api_url = import.meta.env.VITE_API_URL;
+
+  const [email, setEmail] = useState("");
+  const [category, setcategory] = useState("");
+
+  const notifyWarning = (message) => {
+    toast.warn(message, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
+
+  const notifySuccess = (message) => {
+    toast.success(message, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios
+      .post(`${api_url}/api/waitlist`, {
+        email: email,
+        category: category,
+      })
+      .then((res) => {
+        notifySuccess(res.data.message);
+        console.log(res);
+      })
+      .catch((err) => {
+        notifyWarning(err.response.data.message);
+        console.log(err.response);
+      });
+  };
+
   return (
     <section
       className="flex flex-col justify-center items-center h-[60vh] md:py-1  md:h-screen w-full mb-16 md:mb-0"
@@ -12,6 +63,18 @@ function Join() {
         backgroundAttachment: "fixed",
       }}
     >
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+
       <div className="w-11/12 md:w-6/12 text-center mx-auto mb-8">
         <h1 className="text-4xl font-bold text-white mb-3">
           Join Our Waitlist
@@ -20,24 +83,37 @@ function Join() {
           Be the first to know once we're live 🚀 😊
         </p>
       </div>
-      <form action="" className="w-11/12 md:w-7/12 mx-auto">
+      <form
+        action=""
+        className="w-11/12 md:w-7/12 mx-auto"
+        onSubmit={handleSubmit}
+      >
         <select
           name=""
           id=""
+          value={category}
+          onChange={(e) => setcategory(e.target.value)}
           className="bg-gray-200 w-full py-3 px-1 border border-gray-400 mb-3 rounded"
+          required
         >
           <option value="">Select Category</option>
-          <option value="">Gym instructor/nutritionist</option>
-          <option value="">Gym student/nutritionist</option>
-          <option value="">Vc firm / angel investor</option>
+          <option value="instructor">Gym instructor/nutritionist</option>
+          <option value="student">Gym student/nutritionist</option>
+          <option value="investor">Vc firm / angel investor</option>
         </select>
         <div className="w-full block  md:flex justify-between items-center">
           <input
-            type="text"
+            type="email"
             placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             className="bg-gray-200 w-full md:w-[80%]  py-2 px-1 border border-gray-400 mb-4 md:mb-0 rounded"
+            required
           />
-          <button className="w-fit bg-amber-500 text-slate-900 text-normal font-bold py-2 px-4 rounded flex">
+          <button
+            type="submit"
+            className="w-fit bg-amber-500 text-slate-900 text-normal font-bold py-2 px-4 rounded flex"
+          >
             Join Waitlist
           </button>
         </div>
