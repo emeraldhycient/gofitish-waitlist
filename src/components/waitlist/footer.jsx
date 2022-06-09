@@ -11,17 +11,21 @@ function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-2 h-full gap-6">
         <div className="h-full flex justify-center items-center">
           <div className="bg-slate-900 h-8 w-8 mx-3 flex justify-center items-center">
-            <MdMarkEmailUnread size={22} className="text-amber-500" />
+            <a href="mailto:gofitish@gmail.com">
+              <MdMarkEmailUnread size={22} className="text-amber-500" />
+            </a>
           </div>
           <div className="bg-slate-900 h-8 w-8 mx-3 flex justify-center items-center">
-            <ImWhatsapp className="text-amber-500" />
+            <a href="https://wa.me/2347088639675">
+              <ImWhatsapp className="text-amber-500" />
+            </a>
           </div>
           <div className="bg-slate-900 h-8 w-8 mx-3 flex justify-center items-center">
             <BsTwitter className="text-amber-500" />
-          </div>{" "}
+          </div>
           <div className="bg-slate-900 h-8 w-8 mx-3 flex justify-center items-center">
             <BsLinkedin className="text-amber-500" />
-          </div>{" "}
+          </div>
         </div>
 
         <div className="h-full  flex  justify-center items-center">
