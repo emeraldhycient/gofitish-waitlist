@@ -10,7 +10,7 @@ function Navbar() {
         <ul className="hidden md:flex justify-between items-center text-slate-900">
           <li className="mr-4">
             <a
-              href="#"
+              href="./"
               className="text-white text-slate-900"
               style={{ color: "black" }}
             >
@@ -19,7 +19,7 @@ function Navbar() {
           </li>
           <li className="mr-4 text-slate-900">
             <a
-              href="#"
+              href="./about"
               className="text-white text-slate-900"
               style={{ color: "black" }}
             >
