@@ -1,6 +1,7 @@
 import React from "react";
 import About from "../components/waitlist/about";
 import Blog from "../components/waitlist/blog";
+import Footer from "../components/waitlist/footer";
 import HeroSection from "../components/waitlist/heroSection";
 import Join from "../components/waitlist/join";
 import Navbar from "../components/waitlist/navbar";
@@ -20,6 +21,7 @@ function Waitlist() {
       <Stream />
       <Blog />
       <Join />
+      <Footer />
     </div>
   );
 }
