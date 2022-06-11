@@ -16,7 +16,7 @@ function HeroSection() {
             </h1>
             <p className="my-6 text-slate-900">
               We understand the pain in trying to keep fit yourself. Sometimes
-              it's a lonely and stressful journey.you no longer have to do it on
+              it's a lonely and stressful journey.You no longer have to do it on
               your own, Locate the nearest gyms and coaches near you in mins.
             </p>
             <ScrollIntoView selector="#joinwaitlist">

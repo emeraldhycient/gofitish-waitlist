@@ -3,12 +3,14 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import studio from "../../assets/studio.png";
+import loader from "../../assets/loader.gif";
 
 function Join() {
   const api_url = import.meta.env.VITE_API_URL;
 
   const [email, setEmail] = useState("");
   const [category, setcategory] = useState("");
+  const [isloading, setisloading] = useState(false);
 
   const notifyWarning = (message) => {
     toast.warn(message, {
@@ -36,6 +38,7 @@ function Join() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setisloading(true);
     axios
       .post(`${api_url}/waitlist`, {
         email: email,
@@ -50,6 +53,9 @@ function Join() {
       .catch((err) => {
         notifyWarning(err.response.data.message);
         console.log(err.response);
+      })
+      .finally(() => {
+        setisloading(false);
       });
   };
 
@@ -111,12 +117,16 @@ function Join() {
             className="bg-gray-200 w-full md:w-[80%]  py-2 px-1 border border-gray-400 mb-4 md:mb-0 rounded"
             required
           />
-          <button
-            type="submit"
-            className="w-fit bg-amber-500 text-slate-900 text-normal font-bold py-2 px-4 rounded flex"
-          >
-            Join Waitlist
-          </button>
+          {isloading ? (
+            <img src={loader} alt="loader" className="w-12 h-12" />
+          ) : (
+            <button
+              type="submit"
+              className="w-fit bg-amber-500 text-slate-900 text-normal font-bold py-2 px-4 rounded flex"
+            >
+              Join Waitlist
+            </button>
+          )}
         </div>
       </form>
     </section>
