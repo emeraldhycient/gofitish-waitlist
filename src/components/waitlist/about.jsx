@@ -30,8 +30,8 @@ function About() {
                 Find Coaches Around
               </h6>
               <p className="text-gray-400">
-                From the small stuff to the big picture, organizes the work so
-                teams know what to do, why it matters, and how to get it done.
+                Book Hands on fitness instructors and coaches for your daily
+                fitness routines, nearest to you.
               </p>
             </div>
           </div>
@@ -44,8 +44,8 @@ function About() {
                 Video sessions
               </h6>
               <p className="text-gray-400">
-                From the small stuff to the big picture, organizes the work so
-                teams know what to do, why it matters, and how to get it done.
+                Want a live Interaction from the comfort of your home? Book
+                video sessions, take live fitness routines.
               </p>
             </div>
           </div>
@@ -58,8 +58,8 @@ function About() {
                 Follow Audio Courses
               </h6>
               <p className="text-gray-400">
-                From the small stuff to the big picture, organizes the work so
-                teams know what to do, why it matters, and how to get it done.
+                Things could get pretty busy, but you don't have to put your
+                journey on hold. Listen to sessions on the go.
               </p>
             </div>
           </div>
@@ -72,8 +72,9 @@ function About() {
                 Shop Gym Equipment
               </h6>
               <p className="text-gray-400">
-                From the small stuff to the big picture, organizes the work so
-                teams know what to do, why it matters, and how to get it done.
+                Bring the gym home. Shop fitness equipment. From the smallest
+                dumbells to the biggest thredmills. we dont just connect you to
+                an instructors, we connect you to the equipment you need also.
               </p>
             </div>
           </div>
@@ -86,8 +87,8 @@ function About() {
                 Vetted nutrionists and coaches
               </h6>
               <p className="text-gray-400">
-                From the small stuff to the big picture, organizes the work so
-                teams know what to do, why it matters, and how to get it done.
+                Get accurate nutritional information,we don't just bring coaches
+                we bring tested and certified coaches.
               </p>
             </div>
           </div>
@@ -100,8 +101,9 @@ function About() {
                 Health and fitness blog
               </h6>
               <p className="text-gray-400">
-                From the small stuff to the big picture, organizes the work so
-                teams know what to do, why it matters, and how to get it done.
+                You have a question but don't trust answers from google or other
+                sources. Get health and fitness articles, answers to faqs, and
+                lots more.
               </p>
             </div>
           </div>

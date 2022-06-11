@@ -15,10 +15,9 @@ function HeroSection() {
               Locate Coaches and Gyms Near you 📍
             </h1>
             <p className="my-6 text-slate-900">
-              From the small stuff to the big picture, organizes the work so
-              teams know what to do, why it matters, and how to get it done.
-              From the small stuff to the big picture, organizes the work so
-              teams know what to do, why it matters, and how to get it done.
+              We understand the pain in trying to keep fit yourself. Sometimes
+              it's a lonely and stressful journey.you no longer have to do it on
+              your own, Locate the nearest gyms and coaches near you in mins.
             </p>
             <ScrollIntoView selector="#joinwaitlist">
               <button className="w-fit bg-amber-500 text-white text-normal font-bold py-2 px-4 rounded uppercase">

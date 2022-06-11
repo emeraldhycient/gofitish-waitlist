@@ -1,7 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
-
 import "react-toastify/dist/ReactToastify.css";
 import studio from "../../assets/studio.png";
 
@@ -38,13 +37,15 @@ function Join() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`${api_url}/api/waitlist`, {
+      .post(`${api_url}/waitlist`, {
         email: email,
         category: category,
       })
       .then((res) => {
         notifySuccess(res.data.message);
-        console.log(res);
+        //console.log(res);
+        setEmail("");
+        setcategory("");
       })
       .catch((err) => {
         notifyWarning(err.response.data.message);
